@@ -1,0 +1,216 @@
+Data Structure Definition:
+
+
+1) why do we need data structure?
+answer:We need data structure to storing and organizing data in a computer so that it can be used efficiently.
+		The logical or mathematical model of a particular organization of data is called a "Data Structure"  
+	
+2) List out the areas in which data structures are applied extensively?
+Answer:Following are few areas where data structure applied-
+	   1.Compiler Design,
+	   2.Operating System,
+	   3.Database Management System,
+	   4.Statistical analysis package,
+	   5.Numerical Analysis,
+	   6.Graphics,
+       7.Artificial Intelligence,
+       8.Simulation
+
+3) what is an Array?
+answer: Array is a data structure which is  collection of homogeneous or similar type of data.
+		eg int a[]={1,2,3,4,5,6,7,8,10};//all values are integer type
+		eg String str[]={"hell","jail","man","kind"};//all values are String type
+
+4) what is the difference between the Array and ArrayList?
+Answer:	array is the one which can save similar data typed elements, and the size is fixed.
+		array list is a collection which is capable of saving different data typed objects, and is growable.
+		
+5) what is LinkedList?
+ANswer:Linked list is a dynamic data structure whose length can be increased or decreased at run time.
+		Linked list basically consists of memory blocks that are located at random memory locations. 	
+		Linked lists are a way to store data with structures so that the programmer can automatically create a new place to store data whenever necessary.
+		
+6) what is queue?
+Answer:	In the context data structure, a Queue is a linear list in which insertions can take place at one end of the list, called the rear of the list,
+	    and deletion can take place only at other end, called the front of the list. The Behavior of a Queue is like First In First Out(FIFO) system.  	 
+
+7) what is stack?
+Answer: A Stack is one of the most commonly used data structure. A Stack, also called a Last In First Out(LIFO) system,
+		is a linear list in which insertions and deletions take place only at one end, called the "Top".
+
+8) what is FIFO and LIFO?
+Answer:	LIFO=Last In First Out eg Stack
+	FIFO = First in First Out. eg. Queue
+	
+9) what is the order of complexity?
+Answer:Generally, an algorithm has an asymptotic computational complexity. Assuming the input is 
+	   of size N, we can say that the algorithm will finish at O(N), O(N^2), O(N^3), O(N*log(N))
+	   etc. This means that it is a certain mathematical expression of the size of the input, 
+	   and the algorithm finishes between two factors of it.Generally, the smaller the order of
+	   complexity of the program's underlying algorithm, the faster it will run and the better
+	   it will scale as the input gets larger. Thus, we should often seek more efficient algorithms in order to reduce the order of complexity.
+
+10)what is the best case to search an element from an array?
+Answer:In the best case analysis, we calculate lower bound on running time of an algorithm. We 
+	   must know the case that causes minimum number of operations to be executed. In the linear
+	   search problem, the best case occurs when x is present at the first location. The number
+	   of operations in worst case is constant (not dependent on n). So time complexity in the
+	   best case would be O(1).
+
+11)what is the worst case to search an element from an array?
+Answer:In the worst case analysis, we calculate upper bound on running time of an algorithm. We
+       must know the case that causes maximum number of operations to be executed. For Linear Search,
+  	   the worst case happens when the element to be searched (x in the above code) is not present 
+       in the array. When x is not present, the search() functions compares it with all the elements
+       of arr[] one by one. Therefore, the worst case time complexity of linear search would be 
+       O(n).
+      
+12) what is tree in data structure?
+Answer:A Tree is an ideal data structure  for representing some kind of hierarchical data. There
+	  are many types of tree in data structures- General Tree,Binary Trees, Expression Tree, tournament tree, Binary
+	  	search tree,Threaded Tree,AVL Tree and B-Tree. 
+	  	A general Tree T is defined as a finite set of elements, called nodes and the remaining elements, if any are partition into trees,
+	  	which are called the subtree of T.
+	  		 
+
+13) what is graph in data structure?
+Answer:A graph is a data structure which is collection of vertex and edges, G=(V,E) where V is set of vertices and E is set of edges is defined as 
+	   pair of vertices, which are adjacent to0 each other.  
+
+14) what is the difference between the HashTable and HashMap?
+Answer:1.HashMap is non-synchronized whereas Hashtable is synchronized.
+	   2.HashMap allows null values as key and value whereas Hashtable doesn’t allow nulls.
+	   3.Iterator in the HashMap is a fail-fast iterator while the enumerator for the Hashtable is not and throw ConcurrentModificationException if any other Thread 
+	     modifies the map structurally by adding or removing any element except Iterator’s own 
+	     remove() method.
+	   4.Because of thread-safety and synchronization Hashtable is much slower than HashMap,
+	     if used in Single threaded environment.
+	   5.HashMap does not guarantee that the order of the map will remain constant over time.
+	     
+15) What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Answer:	RDBMS = Array (i.e. Array of structures)
+    	Network data model = Graph
+    	Hierarchical data model = Trees
+
+16) How HashMap works in java?
+Answer:HashMap works on the principle of Hashing .  To understand Hashing , we should understand the three terms first 
+  i.e  Hash Function ,
+  	   Hash Value and Bucket .
+	   hashCode() function  which returns an integer value is the Hash function.
+	   Hash value is the int value returned by the hash function .
+	   A bucket is used to store key value pairs . A bucket can have multiple key-value pairs .
+		In hash map, bucket used simple linked list to store objects .
+	   
+
+17)What is Big-(O)-notation?
+Answer:Big-(O)-notation is used in Computer Science to describe the performance or complexity of
+ 	an algorithm.Big-(O)-notation specifically describes the worst-case scenario, and can be used to
+ 	 describe the execution time required or the space used (e.g. in memory or on disk) by an
+  	 algorithm.
+
+
+18)Outlined different kind of sorting algorithm with time complexity?
+Answer:
+		Sorting Algorithm Complexities
+		1. Insertion Sort:
+			To sort unordered list of elements, we remove its entries one at a time and then 
+			insert each of them into a sorted part (initially empty):
+			Time Complexity of Insertion Sort : O(n^2).  
+		
+		2. Bubble Sort: 
+			The algorithm works by comparing each item in the list with the item next to it, and swapping 
+			them if required. In other words, the largest element has bubbled to the top of the array. The
+			algorithm repeats this process until it makes a pass all the way through the list without 
+			swapping any items. 
+			Time Complexity of Bubble Sort : O(n^2).
+		
+		3. The selection sort works as follows:
+			 you look through the entire array for the smallest element, 
+			 once you find it you swap it (the smallest element) with the first element of the array.
+			 Then you look for the smallest element in the remaining array (an array without the first
+			 element) and swap it with the second element. Then you look for the smallest element in 
+			 the remaining array (an array without first and second elements) and swap it with the third
+			 element, and so on.
+			 Time Complexity of Selection Sort : O(n^2).
+		3. Merge Sort: O(n log n)
+			Merge-sort is based on the divide-and-conquer paradigm. It involves the following
+			three steps:
+		    (i)   Divide the array into two (or more) subarrays
+    		(ii)  Sort each subarray (Conquer)
+    		(iii) Merge them into one (in a smart way!) 
+			Time Complexity of Merge Sort :O(n log n)
+		
+		4. Quick Sort: O(n log n)
+			– if implemented badly O(n2)
+				- Choosing bad pivot
+			– Typically faster than Merge Sort
+		5. Radix Sort: O(kn), where k = number of bins
+			– linear time algorithm
+			– uses lots of space
+			– requires detailed knowledge of input
+		6. Heap Sort:O(n*log(n))
+
+19) Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of adding element.
+  b)In terms of removing element.
+  c)In terms of searching element.
+ 
+Answer:
+	Arrays:
+    Inserting: O(1) for all the positions, since it is done with indexes
+    Deleting: O(n) if we have to find the element, O(1) if we know position of the element
+    Searching: O(n) if array is unsorted and O(log n) if array is sorted and something like a binary search is used.
+	Advantages:Quick insertion, very fast access if index known.
+	Disadvantages:Slow search,slow deletion,fixed size.
+	
+	
+	Linked List:
+    Inserting: O(1), if done at the head, O(n) if anywhere else since we have to reach that position by traveseing the linkedlist linearly.
+    Deleting: O(1), if done at the head, O(n) if anywhere else since we have to reach that position by traveseing the linkedlist linearly.
+    Searching: O(n)
+    Advantages:Quick insertion, quick deletion.
+	Disadvantages:Slow search.
+    
+
+	Doubly-Linked List:
+    Inserting: O(1), if done at the head, O(n) if anywhere else since we have to reach that position by traveseing the linkedlist linearly.
+    Deleting: O(1), if done at the head, O(n) if anywhere else since we have to reach that position by traveseing the linkedlist linearly.
+    Searching: O(n)
+    Advantages:Quick insertion, quick deletion.
+	Disadvantages:Slow search.
+
+	Stack:
+    Push: O(1)   Pop: O(1)   Top: O(1)
+    Search (Something like lookup, as a special operation): O(n) (I guess so)
+    Advantages:Provides last-in, first-out access.
+	Disadvantages:Slow access to other items.
+
+	Queue/Deque/Circular Queue:
+    Insert: O(1)   Remove: O(1)   Size: O(1)
+    Advantages:Provides first-in, first-out access.
+	Disadvantages:Slow access to other items.
+
+	Binary Search Tree:
+    Insert, delete and search: Average case: O(log n), Worst Case: O(n)
+    Advantages:Quick search, insertion, deletion (if tree remains balanced).
+    Disadvantages:Deletion algorithm is complex.
+
+	Heap/PriorityQueue (min/max):
+	findMin/findMax: O(1)
+	insert: O(log n)    deleteMin/Max: O(log n)  lookup, delete (if at all provided): O(n), we will have to scan all the elements as they are not ordered like BST
+	Advantages:Fast insertion, deletion, access to largest item.
+	Disadvantages:Slow access to other items.
+
+	HashMap/Hashtable/HashSet:		
+
+    Insert/Delete: O(1) amortized
+    Re-size/hash: O(n)
+	Advantages:tableVery fast access if key known. Fast insertion.
+	Disadvantages:Slow deletion, access slow if key not known, inefficient memory usage.
+	
+	
+
+
+
+
+
